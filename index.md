@@ -11,7 +11,7 @@
     <meta property="og:description" content="Is Autocode safe? Does it steal all your bot info?" />
     <meta name="description" content="desc" />
 
-    <title>Is Autocode Safe?</title>
+    <title>News</title>
 
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
