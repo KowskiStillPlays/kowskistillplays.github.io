@@ -1,37 +1,189 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/KowskiStillPlays/kowskistillplays.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://content.public.files.stdlib.com/shared/static/social/autocode-512.png" rel="icon">
+    <meta property="og:image" content="https://content.public.files.stdlib.com/shared/static/social/autocode-512.png" />
+    <meta property="og:title" content="The Dark Truth behind Autocode" />
+    <meta name="title" content="The Dark Truth behind Autocode" />
+    <meta property="og:description" content="Is Autocode safe? Does it steal all your bot info?" />
+    <meta name="description" content="desc" />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <title>Is Autocode Safe?</title>
 
-### Markdown
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+    <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/blog.css">
+    <!--<![endif]-->
+    <style type="text/css">
+        #cookie-consent {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+        }
 
-- Bulleted
-- List
+        .cookie-consent-background {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+            z-index: 101;
+            background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/desktopbg.png');
+            background-size: cover;
+        }
 
-1. Numbered
-2. List
+        @media only screen and (max-width: 1050px) {
+            .cookie-consent-background {
+                background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/tabletbg.png');
+            }
+        }
 
-**Bold** and _Italic_ and `Code` text
+        @media only screen and (max-width: 550px) {
+            .cookie-consent-background {
+                background-image: url('https://nggyu.nyc3.cdn.digitaloceanspaces.com/mobilebg.png');
+            }
+        }
 
-[Link](url) and ![Image](src)
-```
+        .cookie-consent-content {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+            z-index: 102;
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, .4);
+        }
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+        .text-white {
+            color: white;
+        }
 
-### Jekyll Themes
+        .hidden {
+            display: none;
+        }
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KowskiStillPlays/kowskistillplays.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        .vid-div {
+            margin: 20px 0px;
+            position: relative;
+        }
 
-### Support or Contact
+        #vid-blocker {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 5;
+        }
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        #video-frame {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 1400px) {
+            #video-frame {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="layout" class="pure-g">
+        <div id="cookie-consent" class="pure-u-1">
+            <div class="cookie-consent-background"></div>
+            <div class="cookie-consent-content">
+                <h3 class="text-white">
+                    Like everyone on the internet, we use cookies to improve your experience. If you're ok with that please click accept.
+                </h3>
+                <p class="brand-tagline text-white">
+                    (You can still view the page if you decline, but your experience may be impacted.)
+                </p>
+                <p>
+                    <button class="pure-button button-large">Accept</button>
+                    <button class="pure-button button-large decline-button">Decline</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                <!-- A wrapper for all the blog posts -->
+                <div class="posts">
+                        <div class="post-description">
+                            <div class="vid-div">
+                                <div id="vid-blocker"></div>
+                                <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&enablejsapi=1&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var player;
+        var frame = document.querySelector('#video-frame');
+        var cookieConsent = document.querySelector('#cookie-consent');
+        var firstScriptTag = document.querySelector('script');
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
+
+        cookieConsent.addEventListener('click', () => {
+            player.seekTo(0);
+            player.unMute();
+            cookieConsent.classList.add('hidden');
+        });
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video-frame');
+        }
+
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94067710-2', {
+            'anonymize_ip': true
+        });
+    </script>
+</body>
+
+</html>
